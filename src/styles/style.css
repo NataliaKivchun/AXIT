@@ -1,0 +1,27 @@
+section {
+  padding: 3rem 0;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 1rem 0;
+  text-transform: capitalize;
+}
+
+.normal-button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.13rem;
+  line-height: 1.4;
+  padding: var(--padding-btn-normal);
+  color: #FFFFFF;
+  background: var(--background-color-btn-normal);
+  text-transform: capitalize;
+}
+
+.normal-button:hover{
+  background: var(--background-color-btn-hover);
+}

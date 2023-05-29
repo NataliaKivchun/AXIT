@@ -1,0 +1,27 @@
+.awesome-section {
+  background: #ffffff;
+}
+
+.awesome-section-list {
+  margin-top: 1.25rem;
+  font-size: 0;
+}
+
+.awesome-section-item {
+  text-align: center;
+  display: inline-block;
+  width: 33.3%;
+  color: #000000;
+  padding: 1.25rem;
+}
+
+.awesome-section-item__title {
+  margin-top: 2.5rem;
+}
+
+.awesome-section-item__desc {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.13rem;
+  margin-top: 1rem;
+}
