@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/variables.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/container.css" />
     <link rel="stylesheet" href="./src/styles/tabs.css" />
     <link rel="stylesheet" href="./src/styles/section-header.css" />
@@ -22,218 +23,247 @@
     <link rel="stylesheet" href="./src/styles/reviews.css" />
   </head>
   <body>
-    <section class="tabs-section">
-      <div class="container">
-        <div class="tabs-buttons-box">
-          <button class="tabs-button tabs-button--active" type="button">
-            tab1
-          </button>
-          <button class="tabs-button" type="button">tab2</button>
-          <button class="tabs-button" type="button">tab3</button>
-        </div>
-        <div class="tabs-section-content">
-          <div class="tabs-section-text">
-            <h3 class="tabs-section-text__title">
-              Tabs with soft transitioning effect.
-            </h3>
-            <p class="tabs-section-text__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-              Cum sociis natoque penatibus et magnis dis parturient montes.
-              <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Aenean euismod bibendum laoreet.
-            </p>
-            <button class="normal-button" type="button">Download</button>
+    <header class="header">
+      <img
+        src="./src/assets/icons/header-logo-icon.svg"
+        alt="Logo"
+        class="header-logo"
+      />
+      <nav class="header-navigation">
+        <a href="#tabs-section" class="nav-link">features</a>
+        <a href="#awesome-section" class="nav-link">About</a>
+        <a href="#pricing-section" class="nav-link">Pricing</a>
+        <a href="#reviews-section" class="nav-link">Reviews</a>
+        <a href="#contact-section" class="nav-link">Contact</a>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="tabs-section" class="tabs-section">
+        <div class="container">
+          <div class="tabs-buttons-box">
+            <button class="tabs-button tabs-button--active" type="button">
+              tab1
+            </button>
+            <button class="tabs-button" type="button">tab2</button>
+            <button class="tabs-button" type="button">tab3</button>
           </div>
-          <img
-            src="./src/assets/images/tabs-section-image.png"
-            alt="Tab image"
-            class="tabs-section-img"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="awesome-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title">WHY THIS IS AWESOME</h2>
-          <hr class="section-header__separator" />
-          <p class="section-header__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="awesome-section-list">
-          <div class="awesome-section-item">
-            <img
-              class="awesome-section-item__img"
-              src="./src/assets/icons/icon-lamp.svg"
-              alt="The icon of the first item"
-            />
-            <h4 class="awesome-section-item__title">Thoughtful Design</h4>
-            <p class="awesome-section-item__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-              accumsan et viverra.
-            </p>
-          </div>
-          <div class="awesome-section-item">
-            <img
-              class="awesome-section-item__img"
-              src="./src/assets/icons/icon-keyboard.svg"
-              alt="The icon of the second item"
-            />
-            <h4 class="awesome-section-item__title">Thoughtful Design</h4>
-            <p class="awesome-section-item__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-              accumsan et viverra.
-            </p>
-          </div>
-          <div class="awesome-section-item">
-            <img
-              class="awesome-section-item__img"
-              src="./src/assets/icons/icon-lightning.svg"
-              alt="The icon of the third item"
-            />
-            <h4 class="awesome-section-item__title">Thoughtful Design</h4>
-            <p class="awesome-section-item__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-              accumsan et viverra.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pricing-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title">pricing options</h2>
-          <hr class="section-header__separator" />
-          <p class="section-header__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="pricing-section-list">
-          <div class="pricing-section-item">
-            <h4 class="pricing-section-item__title">Basic</h4>
-            <h5 class="pricing-section-item__price">$10</h5>
-            <ul class="pricing-section-item__info">
-              <li class="pricing-section-item__subitem">Free for life</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-            </ul>
-          </div>
-          <div class="pricing-section-item">
-            <h4 class="pricing-section-item__title">Optima</h4>
-            <h5 class="pricing-section-item__price">$20</h5>
-            <ul class="pricing-section-item__info">
-              <li class="pricing-section-item__subitem">Free for life</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-            </ul>
-          </div>
-          <div class="pricing-section-item">
-            <h4 class="pricing-section-item__title">Pro</h4>
-            <h5 class="pricing-section-item__price">$30</h5>
-            <ul class="pricing-section-item__info">
-              <li class="pricing-section-item__subitem">Free for life</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-              <li class="pricing-section-item__subitem">1 gb of space</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="reviews-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title">what our customers are saying</h2>
-          <hr class="section-header__separator" />
-          <p class="section-header__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-
-        <div class="reviews-section-list">
-          <div class="reviews-section-item">
-            <div class="reviews-section-item__feedback">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus accusamus expedita repellat similique odio aspernatur
-              ex, architecto eaque quo suscipit.
+          <div class="tabs-section-content">
+            <div class="tabs-section-text">
+              <h3 class="tabs-section-text__title">
+                Tabs with soft transitioning effect.
+              </h3>
+              <p class="tabs-section-text__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra justo commodo. Proin sodales pulvinar
+                tempor. Cum sociis natoque penatibus et magnis dis parturient
+                montes.
+                <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aenean euismod bibendum laoreet.
+              </p>
+              <button class="normal-button" type="button">Download</button>
             </div>
-            <div class="reviews-section-item__customer">
+            <img
+              src="./src/assets/images/tabs-section-image.png"
+              alt="Tab image"
+              class="tabs-section-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="awesome-section" class="awesome-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-header__title">WHY THIS IS AWESOME</h2>
+            <hr class="section-header__separator" />
+            <p class="section-header__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="awesome-section-list">
+            <div class="awesome-section-item">
               <img
-                src="./src/assets/images/customer-1-image.jpg"
-                alt="Customer image"
-                class="reviews-section-item__customer-img"
+                class="awesome-section-item__img"
+                src="./src/assets/icons/icon-lamp.svg"
+                alt="The icon of the first item"
               />
-              <div class="reviews-section-item__customer-text">
-                <h4 class="reviews-section-item__customer-name">
-                  Davis Rhiel Madsen
-                </h4>
-                <p class="reviews-section-item__customer-post">Manager</p>
+              <h4 class="awesome-section-item__title">Thoughtful Design</h4>
+              <p class="awesome-section-item__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra.
+              </p>
+            </div>
+            <div class="awesome-section-item">
+              <img
+                class="awesome-section-item__img"
+                src="./src/assets/icons/icon-keyboard.svg"
+                alt="The icon of the second item"
+              />
+              <h4 class="awesome-section-item__title">Thoughtful Design</h4>
+              <p class="awesome-section-item__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra.
+              </p>
+            </div>
+            <div class="awesome-section-item">
+              <img
+                class="awesome-section-item__img"
+                src="./src/assets/icons/icon-lightning.svg"
+                alt="The icon of the third item"
+              />
+              <h4 class="awesome-section-item__title">Thoughtful Design</h4>
+              <p class="awesome-section-item__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing-section" class="pricing-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-header__title">pricing options</h2>
+            <hr class="section-header__separator" />
+            <p class="section-header__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="pricing-section-list">
+            <div class="pricing-section-item">
+              <h4 class="pricing-section-item__title">Basic</h4>
+              <h5 class="pricing-section-item__price">$10</h5>
+              <ul class="pricing-section-item__info">
+                <li class="pricing-section-item__subitem">Free for life</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+              </ul>
+            </div>
+            <div class="pricing-section-item">
+              <h4 class="pricing-section-item__title">Optima</h4>
+              <h5 class="pricing-section-item__price">$20</h5>
+              <ul class="pricing-section-item__info">
+                <li class="pricing-section-item__subitem">Free for life</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+              </ul>
+            </div>
+            <div class="pricing-section-item">
+              <h4 class="pricing-section-item__title">Pro</h4>
+              <h5 class="pricing-section-item__price">$30</h5>
+              <ul class="pricing-section-item__info">
+                <li class="pricing-section-item__subitem">Free for life</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+                <li class="pricing-section-item__subitem">1 gb of space</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews-section" class="reviews-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-header__title">what our customers are saying</h2>
+            <hr class="section-header__separator" />
+            <p class="section-header__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+
+          <div class="reviews-section-list">
+            <div class="reviews-section-item">
+              <div class="reviews-section-item__feedback">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </div>
+              <div class="reviews-section-item__customer">
+                <img
+                  src="./src/assets/images/customer-1-image.jpg"
+                  alt="Customer image"
+                  class="reviews-section-item__customer-img"
+                />
+                <div class="reviews-section-item__customer-text">
+                  <h4 class="reviews-section-item__customer-name">
+                    Davis Rhiel Madsen
+                  </h4>
+                  <p class="reviews-section-item__customer-post">Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-section-item">
+              <div class="reviews-section-item__feedback">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </div>
+              <div class="reviews-section-item__customer">
+                <img
+                  src="./src/assets/images/customer-2-image.jpg"
+                  alt="Customer image"
+                  class="reviews-section-item__customer-img"
+                />
+                <div class="reviews-section-item__customer-text">
+                  <h4 class="reviews-section-item__customer-name">
+                    Jaydon Rosser
+                  </h4>
+                  <p class="reviews-section-item__customer-post">Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-section-item">
+              <div class="reviews-section-item__feedback">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus accusamus expedita repellat similique odio aspernatur
+                ex, architecto eaque quo suscipit.
+              </div>
+              <div class="reviews-section-item__customer">
+                <img
+                  src="./src/assets/images/customer-3-image.jpg"
+                  alt="Customer image"
+                  class="reviews-section-item__customer-img"
+                />
+                <div class="reviews-section-item__customer-text">
+                  <h4 class="reviews-section-item__customer-name">
+                    Cooper Dorwart
+                  </h4>
+                  <p class="reviews-section-item__customer-post">Manager</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="reviews-section-item">
-            <div class="reviews-section-item__feedback">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus accusamus expedita repellat similique odio aspernatur
-              ex, architecto eaque quo suscipit.
-            </div>
-            <div class="reviews-section-item__customer">
-              <img
-                src="./src/assets/images/customer-2-image.jpg"
-                alt="Customer image"
-                class="reviews-section-item__customer-img"
-              />
-              <div class="reviews-section-item__customer-text">
-                <h4 class="reviews-section-item__customer-name">
-                  Jaydon Rosser
-                </h4>
-                <p class="reviews-section-item__customer-post">Manager</p>
-              </div>
-            </div>
-          </div>
-          <div class="reviews-section-item">
-            <div class="reviews-section-item__feedback">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus accusamus expedita repellat similique odio aspernatur
-              ex, architecto eaque quo suscipit.
-            </div>
-            <div class="reviews-section-item__customer">
-              <img
-                src="./src/assets/images/customer-3-image.jpg"
-                alt="Customer image"
-                class="reviews-section-item__customer-img"
-              />
-              <div class="reviews-section-item__customer-text">
-                <h4 class="reviews-section-item__customer-name">
-                  Cooper Dorwart
-                </h4>
-                <p class="reviews-section-item__customer-post">Manager</p>
-              </div>
-            </div>
+        </div>
+      </section>
+
+      <section id="contact-section" class="contact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-header__title">contact us</h2>
+            <hr class="section-header__separator" />
+            <p class="section-header__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
