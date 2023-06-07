@@ -1,0 +1,23 @@
+.design-section {
+  background-image: url(../assets/images/background-image.png);
+  background-color: #333333;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+.design-section::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.design-section .container {
+    position: relative;
+    z-index: 2;
+}

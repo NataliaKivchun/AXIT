@@ -1,8 +1,11 @@
 :root{
     --background-color-btn-normal: #EC7979;
-    --background-color-btn-hover: #AB4949;
+    --background-color-btn-normal-hover: #AB4949;
 
-    --padding-btn-normal: 1rem 5.6rem;
+    --border-color-btn-transparent: #FFFFFF;
+    --border-color-btn-transparent-hover: #EC7979;
+
+    --padding-btn: 1rem 5.6rem;
 
     --padding-section: 3.5rem 0;
 }
