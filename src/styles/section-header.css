@@ -23,4 +23,9 @@
     color: #86878b;
     margin-top: 2.5rem;
   }
+
+  .section-header--white-color {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
   

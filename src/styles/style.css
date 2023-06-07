@@ -15,17 +15,30 @@ h4 {
   padding-top: 4.6rem;
 }
 
-.normal-button {
+.button {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 1.13rem;
   line-height: 1.4;
-  padding: var(--padding-btn-normal);
+  padding: var(--padding-btn);
   color: #FFFFFF;
-  background: var(--background-color-btn-normal);
   text-transform: capitalize;
 }
 
+.normal-button {
+  background: var(--background-color-btn-normal);
+}
+
 .normal-button:hover{
-  background: var(--background-color-btn-hover);
+  background: var(--background-color-btn-normal-hover);
+}
+
+.transparent-button {
+  background: transparent;
+  border: 2px solid;
+  border-color: var(--border-color-btn-transparent);
+}
+
+.transparent-button:hover {
+  border-color: var(--border-color-btn-transparent-hover);
 }
