@@ -1,0 +1,62 @@
+.banner-section {
+  background-image: url(../assets/images/banner-background-image.png);
+  background-color: #333333;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+.banner-section::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.banner-section .container {
+  padding: 8rem 0;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 3rem;
+}
+
+.banner-section-text-content {
+  text-align: left;
+}
+
+.banner-section-text-content .section-header {
+  text-align: left;
+}
+
+.banner-section-form {
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 26rem;
+}
+
+.banner-section-form__title {
+    text-transform: uppercase;
+    color: #333333;
+    padding: 1rem 1.5rem;
+}
+
+.banner-section-form__title--red {
+    color: #EC7979;
+}
+
+.banner-form-fieldset {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border: none;
+    padding: 3rem 2rem 4rem;
+}

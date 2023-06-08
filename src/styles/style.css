@@ -2,6 +2,14 @@ section {
   padding: var(--padding-section);
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
 h4 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -13,41 +21,4 @@ h4 {
 
 .main {
   padding-top: 4.6rem;
-}
-
-.button {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.13rem;
-  line-height: 1.4;
-  padding: var(--padding-btn);
-  color: #FFFFFF;
-  text-transform: capitalize;
-}
-
-.normal-button {
-  background: var(--background-color-btn-normal);
-}
-
-.normal-button:hover{
-  background: var(--background-color-btn-normal-hover);
-}
-
-.normal-button:active {
-  box-shadow: var(--box-shadow-btn-normal-active);
-}
-
-.transparent-button {
-  background: transparent;
-  border: 2px solid;
-  border-color: var(--border-color-btn-transparent);
-}
-
-.transparent-button:hover {
-  border-color: var(--border-color-btn-transparent-hover);
-}
-
-.transparent-button:active {
-  background: var(--background-color-btn-transparent-active);
-  border-color: var(--border-color-btn-transparent-active);
 }

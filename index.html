@@ -11,12 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./src/assets/icons/favicon.jpg">
+    <link rel="icon" href="./src/assets/icons/favicon.jpg" />
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/variables.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/buttons.css" />
     <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/container.css" />
+    <link rel="stylesheet" href="./src/styles/form-components.css" />
+    <link rel="stylesheet" href="./src/styles/banner.css" />
     <link rel="stylesheet" href="./src/styles/social.css" />
     <link rel="stylesheet" href="./src/styles/tabs.css" />
     <link rel="stylesheet" href="./src/styles/section-header.css" />
@@ -42,6 +45,67 @@
       </nav>
     </header>
     <main class="main">
+      <section class="banner-section">
+        <div class="container">
+          <div class="banner-section-text-content">
+            <img
+              src="./src/assets/icons/banner-logo.svg"
+              alt="Banner logo"
+              class="banner-section-logo"
+            />
+            <div class="section-header">
+              <h1 class="section-header__title section-header--white-color">
+                MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+              </h1>
+              <hr
+                class="section-header__separator section-header--white-color"
+              />
+              <p class="section-header__subtitle section-header--white-color">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <button class="button transparent-button" type="button">
+              Download
+            </button>
+          </div>
+          <form name="banner-form" action="" class="banner-section-form">
+            <h4 class="banner-section-form__title">
+              Try Your
+              <span class="banner-section-form__title--red">FREE</span> Trial
+              Today
+            </h4>
+            <fieldset class="banner-form-fieldset">
+              <label class="form-label" for=""></label>
+              <input
+                autofocus
+                class="form-input"
+                type="text"
+                placeholder="Name"
+                required
+              />
+              <label class="form-label" for=""></label>
+              <input
+                class="form-input"
+                type="email"
+                inputmode="email"
+                placeholder="Email"
+                required
+              />
+              <label class="form-label" for=""></label>
+              <input
+                class="form-input"
+                type="password"
+                placeholder="Password"
+                required
+              />
+            </fieldset>
+
+            <button class="button form-button" type="submit">
+              Get Started
+            </button>
+          </form>
+        </div>
+      </section>
       <section class="social-section">
         <div class="container social-section-container">
           <div class="social-section-text">
@@ -114,7 +178,9 @@
                 <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit. Aenean euismod bibendum laoreet.
               </p>
-              <button class="button normal-button" type="button">Download</button>
+              <button class="button normal-button" type="button">
+                Download
+              </button>
             </div>
             <img
               src="./src/assets/images/tabs-section-image.png"
@@ -309,13 +375,17 @@
       <section class="design-section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-header__title section-header--white-color">STYLISH AXURE DESIGN</h2>
+            <h2 class="section-header__title section-header--white-color">
+              STYLISH AXURE DESIGN
+            </h2>
             <hr class="section-header__separator section-header--white-color" />
             <p class="section-header__subtitle section-header--white-color">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <button class="button transparent-button" type="button">Download</button>
+          <button class="button transparent-button" type="button">
+            Download
+          </button>
         </div>
       </section>
       <section id="contact-section" class="contact-section">
@@ -334,15 +404,43 @@
       <div class="container">
         <address class="footer-address">
           <div class="footer-icons-box">
-          <img src="./src/assets/icons/footer-icons/facebook_icon.svg" alt="Footer icon" class="footer-icon">
-          <img src="./src/assets/icons/footer-icons/twitter_icon.svg" alt="Footer icon" class="footer-icon">
-          <img src="./src/assets/icons/footer-icons/linkedin_icon.svg" alt="Footer icon" class="footer-icon">
-          <img src="./src/assets/icons/footer-icons/pinterest_icon.svg" alt="Footer icon" class="footer-icon">
-          <img src="./src/assets/icons/footer-icons/instagram_icon.svg" alt="Footer icon" class="footer-icon">
-          <img src="./src/assets/icons/footer-icons/github_icon.svg" alt="Footer icon" class="footer-icon">
-          <img src="./src/assets/icons/footer-icons/rss_icon.svg" alt="Footer icon" class="footer-icon">
-        </div>
-        <p class="footer-copyright">© 2015 Axure Themes</p>
+            <img
+              src="./src/assets/icons/footer-icons/facebook_icon.svg"
+              alt="Footer icon"
+              class="footer-icon"
+            />
+            <img
+              src="./src/assets/icons/footer-icons/twitter_icon.svg"
+              alt="Footer icon"
+              class="footer-icon"
+            />
+            <img
+              src="./src/assets/icons/footer-icons/linkedin_icon.svg"
+              alt="Footer icon"
+              class="footer-icon"
+            />
+            <img
+              src="./src/assets/icons/footer-icons/pinterest_icon.svg"
+              alt="Footer icon"
+              class="footer-icon"
+            />
+            <img
+              src="./src/assets/icons/footer-icons/instagram_icon.svg"
+              alt="Footer icon"
+              class="footer-icon"
+            />
+            <img
+              src="./src/assets/icons/footer-icons/github_icon.svg"
+              alt="Footer icon"
+              class="footer-icon"
+            />
+            <img
+              src="./src/assets/icons/footer-icons/rss_icon.svg"
+              alt="Footer icon"
+              class="footer-icon"
+            />
+          </div>
+          <p class="footer-copyright">© 2015 Axure Themes</p>
         </address>
       </div>
     </footer>
