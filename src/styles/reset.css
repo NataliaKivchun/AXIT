@@ -53,18 +53,18 @@ ol[class] {
   list-style: none;
 }
 
-html{
+html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
 
-button{
+button {
   background: transparent;
   cursor: pointer;
   border: none;
 }
 
-img{
+img {
   vertical-align: top;
 }
 
@@ -74,5 +74,9 @@ a {
 }
 
 address {
-  font-style: normal
+  font-style: normal;
+}
+
+textarea {
+  resize: none;
 }

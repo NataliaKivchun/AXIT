@@ -1,20 +1,74 @@
-.form-input {
+.form-input,
+.form-textarea {
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.4;
   border: none;
   font-size: 1.13rem;
-  width: 100%;
   border-bottom: 1px solid #bdbdbd;
   padding: 5px;
+  padding-left: 10px;
   color: #333333;
 }
 
-.form-input::placeholder {
+.form-input::placeholder,
+.form-textarea::placeholder {
   font-size: 0.9rem;
   color: #bdbdbd;
 }
 
-.form-input:focus {
-  outline: 1px solid #ec7979;
+.form-input:focus,
+.form-textarea:focus {
+  outline: 2px solid #ec7979;
+  border: none;
+}
+
+.form-input:focus::placeholder,
+.form-textarea:focus::placeholder {
+  visibility: hidden;
+}
+
+.form-label {
+  width: 100%;
+  position: relative;
+}
+
+.label-content {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  border: none;
+  font-size: 0.9rem;
+  position: absolute;
+  background: #ffffff;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  visibility: hidden;
+  color: #333333;
+  padding: 0 10px 0 5px;
+}
+
+.form-input:placeholder-shown,
+.form-textarea:placeholder-shown {
+  visibility: visible;
+}
+
+.form-input:required ~ .label-content::after,
+.form-textarea:required ~ .label-content::after {
+  content: "*";
+  color: #ec7979;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.form-input:placeholder-shown:focus ~ .label-content,
+.form-textarea:placeholder-shown:focus ~ .label-content,
+.form-input:not(:placeholder-shown) ~ .label-content,
+.form-textarea:not(:placeholder-shown) ~ .label-content {
+  top: -7px;
+  opacity: 1;
+  font-size: 80%;
+  visibility: visible;
 }

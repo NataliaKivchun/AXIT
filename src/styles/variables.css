@@ -1,18 +1,18 @@
-:root{
-    --background-color-btn-normal: #EC7979;
-    --background-color-btn-normal-hover: #AB4949;
-    --box-shadow-btn-normal-active: inset 0px 0px 10px #AB4949;
+:root {
+  --background-color-btn-normal: #ec7979;
+  --background-color-btn-normal-hover: #ab4949;
+  --box-shadow-btn-normal-active: inset 0px 0px 10px #ab4949;
 
-    --border-color-btn-transparent: #FFFFFF;
-    --border-color-btn-transparent-hover: #EC7979;
-    --border-color-btn-transparent-active: #AB4949;
-    --background-color-btn-transparent-active: #AB4949;
+  --border-color-btn-transparent: #ffffff;
+  --border-color-btn-transparent-hover: #ec7979;
+  --border-color-btn-transparent-active: #ab4949;
+  --background-color-btn-transparent-active: #ab4949;
 
-    --background-color-btn-form: #EC7979;
-    --background-color-btn-form-hover: #AB4949;
-    --box-shadow-btn-form-active: inset 0px 0px 10px #AB4949;
+  --background-color-btn-form: #ec7979;
+  --background-color-btn-form-hover: #ab4949;
+  --box-shadow-btn-form-active: inset 0px 0px 10px #ab4949;
 
-    --padding-btn: 1rem 5.6rem;
+  --padding-btn: 1rem 5.6rem;
 
-    --padding-section: 3.5rem 0;
+  --padding-section: 3.5rem 0;
 }

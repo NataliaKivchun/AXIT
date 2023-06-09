@@ -1,50 +1,50 @@
 .button {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.13rem;
-    line-height: 1.4;
-    padding: var(--padding-btn);
-    color: #FFFFFF;
-    text-transform: capitalize;
-  }
-  
-  .normal-button {
-    background: var(--background-color-btn-normal);
-  }
-  
-  .normal-button:hover{
-    background: var(--background-color-btn-normal-hover);
-  }
-  
-  .normal-button:active {
-    box-shadow: var(--box-shadow-btn-normal-active);
-  }
-  
-  .transparent-button {
-    background: transparent;
-    border: 2px solid;
-    border-color: var(--border-color-btn-transparent);
-  }
-  
-  .transparent-button:hover {
-    border-color: var(--border-color-btn-transparent-hover);
-  }
-  
-  .transparent-button:active {
-    background: var(--background-color-btn-transparent-active);
-    border-color: var(--border-color-btn-transparent-active);
-  }
-  
-  .form-button {
-    background: var(--background-color-btn-form);
-    width: 100%;
-    border-radius: 0px 0px 10px 10px;
-  }
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.13rem;
+  line-height: 1.4;
+  padding: var(--padding-btn);
+  color: #ffffff;
+  text-transform: capitalize;
+}
 
-  .form-button:hover {
-    background: var(--background-color-btn-form-hover);
-  }
-  
-  .form-button:active {
-    box-shadow: var(--box-shadow-btn-form-active);
-  }
+.normal-button {
+  background: var(--background-color-btn-normal);
+}
+
+.normal-button:hover {
+  background: var(--background-color-btn-normal-hover);
+}
+
+.normal-button:active {
+  box-shadow: var(--box-shadow-btn-normal-active);
+}
+
+.transparent-button {
+  background: transparent;
+  border: 2px solid;
+  border-color: var(--border-color-btn-transparent);
+}
+
+.transparent-button:hover {
+  border-color: var(--border-color-btn-transparent-hover);
+}
+
+.transparent-button:active {
+  background: var(--background-color-btn-transparent-active);
+  border-color: var(--border-color-btn-transparent-active);
+}
+
+.form-button {
+  background: var(--background-color-btn-form);
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.form-button:hover {
+  background: var(--background-color-btn-form-hover);
+}
+
+.form-button:active {
+  box-shadow: var(--box-shadow-btn-form-active);
+}
