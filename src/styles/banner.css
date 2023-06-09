@@ -3,7 +3,6 @@
   background-color: #333333;
   background-size: cover;
   background-position: center;
-  text-align: center;
   position: relative;
 }
 
@@ -36,27 +35,29 @@
 }
 
 .banner-section-form {
-    background: #FFFFFF;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    min-width: 26rem;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 26rem;
 }
 
 .banner-section-form__title {
-    text-transform: uppercase;
-    color: #333333;
-    padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 1rem 1.5rem;
 }
 
 .banner-section-form__title--red {
-    color: #EC7979;
+  color: #ec7979;
 }
 
 .banner-form-fieldset {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    border: none;
-    padding: 3rem 2rem 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  border: none;
+  padding: 2rem 2rem 4rem;
 }

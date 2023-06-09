@@ -1,59 +1,59 @@
 .pricing-section {
-    background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .pricing-section-list {
-    display: flex;
-    column-gap: 2rem;
-    margin-top: 1.25rem;
-    align-items: flex-end;
-    min-height: 34rem;
+  display: flex;
+  column-gap: 2rem;
+  margin-top: 1.25rem;
+  align-items: flex-end;
+  min-height: 34rem;
 }
 
 .pricing-section-item {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-basis: 100%;
-    justify-content: flex-end;
-    row-gap: 2px;
-    transition: 2s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-basis: 100%;
+  justify-content: flex-end;
+  row-gap: 2px;
+  transition: 1s ease;
 }
 
 .pricing-section-item:hover {
-    box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
-    transform: translateY(-1rem);    
+  box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
+  transform: translateY(-1.5rem);
 }
 
 .pricing-section-item__title {
-    color: #FFFFFF;
-    background: #333333;
+  color: #ffffff;
+  background: #333333;
 }
 
 .pricing-section-item__price {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 2.25rem;
-    color: #FFFFFF;
-    background: #333333;
-    padding: 1.8rem 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #ffffff;
+  background: #333333;
+  padding: 1.8rem 0;
 }
 
 .pricing-section-item__info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 1.13rem;
-    color: #86878B;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.13rem;
+  color: #86878b;
 }
 
 .pricing-section-item__subitem {
-    padding: 0.8rem 0;
-    background: #FFFFFF;
+  padding: 0.8rem 0;
+  background: #ffffff;
 }
 
 .pricing-section-item__subitem:first-child {
-    background: #333333;
+  background: #333333;
 }

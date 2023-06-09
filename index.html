@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./src/styles/pricing.css" />
     <link rel="stylesheet" href="./src/styles/reviews.css" />
     <link rel="stylesheet" href="./src/styles/design.css" />
+    <link rel="stylesheet" href="./src/styles/contact.css" />
     <link rel="stylesheet" href="./src/styles/footer.css" />
   </head>
   <body>
@@ -75,29 +76,40 @@
               Today
             </h4>
             <fieldset class="banner-form-fieldset">
-              <label class="form-label" for=""></label>
-              <input
-                autofocus
-                class="form-input"
-                type="text"
-                placeholder="Name"
-                required
-              />
-              <label class="form-label" for=""></label>
-              <input
-                class="form-input"
-                type="email"
-                inputmode="email"
-                placeholder="Email"
-                required
-              />
-              <label class="form-label" for=""></label>
-              <input
-                class="form-input"
-                type="password"
-                placeholder="Password"
-                required
-              />
+              <label class="form-label" for="banner-form-input-name">
+                <input
+                  id="banner-form-input-name"
+                  autofocus
+                  class="form-input"
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+                <span class="label-content">Name</span>
+              </label>
+
+              <label class="form-label" for="banner-form-input-email">
+                <input
+                  id="banner-form-input-email"
+                  class="form-input"
+                  type="email"
+                  placeholder="Email"
+                  inputmode="email"
+                  required
+                />
+                <span class="label-content">Email</span>
+              </label>
+
+              <label class="form-label" for="banner-form-input-password">
+                <input
+                  id="banner-form-input-password"
+                  class="form-input"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <span class="label-content">Password</span>
+              </label>
             </fieldset>
 
             <button class="button form-button" type="submit">
@@ -388,6 +400,7 @@
           </button>
         </div>
       </section>
+
       <section id="contact-section" class="contact-section">
         <div class="container">
           <div class="section-header">
@@ -397,6 +410,57 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
+          <form action="" class="contact-section-form" name="contact-form">
+            <fieldset class="contact-form-fieldset">
+              <div class="contact-section-inputs-group">
+                <label class="form-label" for="contact-form-input-name">
+                  <input
+                    id="contact-form-input-name"
+                    class="form-input"
+                    type="text"
+                    placeholder="Name"
+                    required
+                  />
+                  <span class="label-content">Name</span>
+                </label>
+
+                <label class="form-label" for="contact-form-input-email">
+                  <input
+                    id="contact-form-input-email"
+                    class="form-input"
+                    type="email"
+                    inputmode="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <span class="label-content">Email</span>
+                </label>
+
+                <label class="form-label" for="contact-form-input-password">
+                  <input
+                    id="contact-form-input-password"
+                    class="form-input"
+                    type="password"
+                    placeholder="Password"
+                    required
+                  />
+                  <span class="label-content">Password</span>
+                </label>
+              </div>
+
+              <label class="form-label" for="contact-form-textarea">
+                <textarea
+                  class="form-textarea"
+                  id="contact-form-textarea"
+                  placeholder="Message"
+                ></textarea>
+                <span class="label-content">Message</span>
+              </label>
+            </fieldset>
+            <button class="button normal-button" type="button">
+              Send Message
+            </button>
+          </form>
         </div>
       </section>
     </main>
