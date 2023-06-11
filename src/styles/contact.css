@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.contact-form-fieldset {
+.contact-form-fields {
   width: 100%;
   display: flex;
   column-gap: 3rem;
@@ -20,10 +20,10 @@
   row-gap: 4rem;
 }
 
-.contact-form-fieldset > .form-label {
+.contact-form-fields > .form-label {
   width: 50%;
 }
 
-.contact-form-fieldset .form-textarea {
+.contact-form-fields .form-textarea {
   height: 100%;
 }
