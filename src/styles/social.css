@@ -7,7 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 2rem;
+}
+
+.social-section-text {
+  max-width: 30%;
 }
 
 .social-section-title {
@@ -15,13 +18,32 @@
 }
 
 .social-section-text-info {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 1.13rem;
   color: #86878b;
 }
 
 .social-section-icons-box {
+  width: 100%;
   display: flex;
-  column-gap: 2rem;
+  justify-content: space-between;
+}
+
+.social-section-icon-link {
+  max-width: 100%;
+  margin: 2%;
+}
+
+.social-section-icon {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .social-section-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .social-section-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

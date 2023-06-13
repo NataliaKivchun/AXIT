@@ -9,15 +9,22 @@
 }
 
 .footer-icons-box {
+  min-width: 60%;
   display: flex;
-  column-gap: 2rem;
   padding: 2rem 0;
+  justify-content: space-between;
+}
+
+.footer-icon-link {
+  max-width: 100%;
+  margin: 2%;
+}
+
+.footer-icon {
+  max-width: 100%;
 }
 
 .footer-copyright {
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 1.13rem;
   color: rgba(255, 255, 255, 0.5);
   padding-bottom: 1rem;
 }

@@ -48,3 +48,9 @@
 .form-button:active {
   box-shadow: var(--box-shadow-btn-form-active);
 }
+
+@media (max-width: 845px) {
+  .button {
+    font-size: 1rem;
+  }
+}
