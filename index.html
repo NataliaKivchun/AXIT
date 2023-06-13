@@ -32,12 +32,24 @@
   </head>
   <body>
     <header class="header">
-      <img
-        src="./src/assets/icons/header-logo-icon.svg"
-        alt="Logo"
-        class="header-logo"
-      />
+      <a class="header-logo-link" href="#banner-section">
+        <img
+          src="./src/assets/icons/header-logo-icon.svg"
+          alt="Logo"
+          class="header-logo"
+        />
+      </a>
       <nav class="header-navigation">
+        <input
+          class="menu-burger-btn"
+          type="checkbox"
+          id="menu-burger-btn"
+          name="menu-burger-btn"
+          aria-label="Hamburger menu"
+        />
+        <label class="menu-burger-label" for="menu-burger-btn">
+          <span class="menu-burger"></span>
+        </label>
         <ul class="header-navigation-list">
           <li class="header-navigation-list__item">
             <a href="#tabs-section" class="nav-link">features</a>
@@ -58,8 +70,8 @@
       </nav>
     </header>
 
-    <main class="main">
-      <section class="banner-section">
+    <main id="main" class="main">
+      <section id="banner-section" class="banner-section">
         <div class="container">
           <div class="banner-section-text-content">
             <img
@@ -150,43 +162,43 @@
             </p>
           </div>
           <div class="social-section-icons-box">
-            <a class="social-section-icon-link" href=""
+            <a class="social-section-icon-link" href="#"
               ><img
                 class="social-section-icon"
                 src="./src/assets/icons/social-icons/facebook_icon.svg"
                 alt="Social icon"
             /></a>
-            <a class="social-section-icon-link" href=""
+            <a class="social-section-icon-link" href="#"
               ><img
                 class="social-section-icon"
                 src="./src/assets/icons/social-icons/twitter_icon.svg"
                 alt="Social icon"
             /></a>
-            <a class="social-section-icon-link" href=""
+            <a class="social-section-icon-link" href="#"
               ><img
                 class="social-section-icon"
                 src="./src/assets/icons/social-icons/linkedin_icon.svg"
                 alt="Social icon"
             /></a>
-            <a class="social-section-icon-link" href=""
+            <a class="social-section-icon-link" href="#"
               ><img
                 class="social-section-icon"
                 src="./src/assets/icons/social-icons/pinterest_icon.svg"
                 alt="Social icon"
             /></a>
-            <a class="social-section-icon-link" href=""
+            <a class="social-section-icon-link" href="#"
               ><img
                 class="social-section-icon"
                 src="./src/assets/icons/social-icons/instagram_icon.svg"
                 alt="Social icon"
             /></a>
-            <a class="social-section-icon-link" href=""
+            <a class="social-section-icon-link" href="#"
               ><img
                 class="social-section-icon"
                 src="./src/assets/icons/social-icons/github_icon.svg"
                 alt="Social icon"
             /></a>
-            <a class="social-section-icon-link" href=""
+            <a class="social-section-icon-link" href="#"
               ><img
                 class="social-section-icon"
                 src="./src/assets/icons/social-icons/rss_icon.svg"
@@ -347,65 +359,93 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-
-          <div class="reviews-section-list">
-            <div class="reviews-section-item">
-              <div class="reviews-section-item__feedback">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloribus accusamus expedita repellat similique odio aspernatur
-                ex, architecto eaque quo suscipit.
-              </div>
-              <div class="reviews-section-item__customer">
-                <img
-                  src="./src/assets/images/customer-1-image.jpg"
-                  alt="Customer image"
-                  class="reviews-section-item__customer-img"
-                />
-                <div class="reviews-section-item__customer-text">
-                  <h4 class="reviews-section-item__customer-name">
-                    Davis Rhiel Madsen
-                  </h4>
-                  <p class="reviews-section-item__customer-post">Manager</p>
+          <div class="reviews-radio-carousel">
+            <input
+              id="radio-review-one"
+              class="review-radio"
+              type="radio"
+              name="review-choice"
+              checked
+            />
+            <input
+              id="radio-review-two"
+              class="review-radio"
+              type="radio"
+              name="review-choice"
+            />
+            <input
+              id="radio-review-three"
+              class="review-radio"
+              type="radio"
+              name="review-choice"
+            />
+            <div class="reviews-radio-labels">
+              <label class="review-radio-label" for="radio-review-one"></label>
+              <label class="review-radio-label" for="radio-review-two"></label>
+              <label
+                class="review-radio-label"
+                for="radio-review-three"
+              ></label>
+            </div>
+            <div class="reviews-section-list">
+              <div class="reviews-section-item">
+                <p class="reviews-section-item__feedback">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus accusamus expedita repellat similique odio
+                  aspernatur ex, architecto eaque quo suscipit.
+                </p>
+                <div class="reviews-section-item__customer">
+                  <img
+                    src="./src/assets/images/customer-1-image.jpg"
+                    alt="Customer image"
+                    class="reviews-section-item__customer-img"
+                  />
+                  <div class="reviews-section-item__customer-text">
+                    <h4 class="reviews-section-item__customer-name">
+                      Davis Rhiel Madsen
+                    </h4>
+                    <p class="reviews-section-item__customer-post">Manager</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="reviews-section-item">
-              <div class="reviews-section-item__feedback">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloribus accusamus expedita repellat similique odio aspernatur
-                ex, architecto eaque quo suscipit.
-              </div>
-              <div class="reviews-section-item__customer">
-                <img
-                  src="./src/assets/images/customer-2-image.jpg"
-                  alt="Customer image"
-                  class="reviews-section-item__customer-img"
-                />
-                <div class="reviews-section-item__customer-text">
-                  <h4 class="reviews-section-item__customer-name">
-                    Jaydon Rosser
-                  </h4>
-                  <p class="reviews-section-item__customer-post">Manager</p>
+              <div class="reviews-section-item">
+                <p class="reviews-section-item__feedback">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus accusamus expedita repellat similique odio
+                  aspernatur ex, architecto eaque quo suscipit.
+                </p>
+                <div class="reviews-section-item__customer">
+                  <img
+                    src="./src/assets/images/customer-2-image.jpg"
+                    alt="Customer image"
+                    class="reviews-section-item__customer-img"
+                  />
+                  <div class="reviews-section-item__customer-text">
+                    <h4 class="reviews-section-item__customer-name">
+                      Jaydon Rosser
+                    </h4>
+                    <p class="reviews-section-item__customer-post">Manager</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="reviews-section-item">
-              <div class="reviews-section-item__feedback">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Doloribus accusamus expedita repellat similique odio aspernatur
-                ex, architecto eaque quo suscipit.
-              </div>
-              <div class="reviews-section-item__customer">
-                <img
-                  src="./src/assets/images/customer-3-image.jpg"
-                  alt="Customer image"
-                  class="reviews-section-item__customer-img"
-                />
-                <div class="reviews-section-item__customer-text">
-                  <h4 class="reviews-section-item__customer-name">
-                    Cooper Dorwart
-                  </h4>
-                  <p class="reviews-section-item__customer-post">Manager</p>
+              <div class="reviews-section-item">
+                <p class="reviews-section-item__feedback">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus accusamus expedita repellat similique odio
+                  aspernatur ex, architecto eaque quo suscipit.
+                </p>
+                <div class="reviews-section-item__customer">
+                  <img
+                    src="./src/assets/images/customer-3-image.jpg"
+                    alt="Customer image"
+                    class="reviews-section-item__customer-img"
+                  />
+                  <div class="reviews-section-item__customer-text">
+                    <h4 class="reviews-section-item__customer-name">
+                      Cooper Dorwart
+                    </h4>
+                    <p class="reviews-section-item__customer-post">Manager</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -506,45 +546,45 @@
       <div class="container">
         <address class="footer-address">
           <div class="footer-icons-box">
-            <a class="footer-icon-link" href=""
+            <a class="footer-icon-link" href="#"
               ><img
                 src="./src/assets/icons/footer-icons/facebook_icon.svg"
                 alt="Footer icon"
                 class="footer-icon"
             /></a>
 
-            <a class="footer-icon-link" href=""
+            <a class="footer-icon-link" href="#"
               ><img
                 src="./src/assets/icons/footer-icons/twitter_icon.svg"
                 alt="Footer icon"
                 class="footer-icon"
             /></a>
 
-            <a class="footer-icon-link" href=""
+            <a class="footer-icon-link" href="#"
               ><img
                 src="./src/assets/icons/footer-icons/linkedin_icon.svg"
                 alt="Footer icon"
                 class="footer-icon"
             /></a>
-            <a class="footer-icon-link" href=""
+            <a class="footer-icon-link" href="#"
               ><img
                 src="./src/assets/icons/footer-icons/pinterest_icon.svg"
                 alt="Footer icon"
                 class="footer-icon"
             /></a>
-            <a class="footer-icon-link" href=""
+            <a class="footer-icon-link" href="#"
               ><img
                 src="./src/assets/icons/footer-icons/instagram_icon.svg"
                 alt="Footer icon"
                 class="footer-icon"
             /></a>
-            <a class="footer-icon-link" href=""
+            <a class="footer-icon-link" href="#"
               ><img
                 src="./src/assets/icons/footer-icons/github_icon.svg"
                 alt="Footer icon"
                 class="footer-icon"
             /></a>
-            <a class="footer-icon-link" href=""
+            <a class="footer-icon-link" href="#"
               ><img
                 src="./src/assets/icons/footer-icons/rss_icon.svg"
                 alt="Footer icon"

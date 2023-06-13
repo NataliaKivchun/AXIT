@@ -4,19 +4,16 @@
 
 .pricing-section-list {
   display: flex;
-  column-gap: 2rem;
+  margin: -15px;
   margin-top: 1.25rem;
-  align-items: flex-end;
-  min-height: 34rem;
 }
 
 .pricing-section-item {
   display: flex;
   flex-direction: column;
   text-align: center;
-  flex-basis: 100%;
-  justify-content: flex-end;
-  row-gap: 2px;
+  flex-basis: calc(100% / 12 * 4 - 30px);
+  margin: 15px;
   transition: 1s ease;
 }
 
@@ -28,6 +25,7 @@
 .pricing-section-item__title {
   color: #ffffff;
   background: #333333;
+  margin-bottom: 2px;
 }
 
 .pricing-section-item__price {
@@ -37,6 +35,7 @@
   color: #ffffff;
   background: #333333;
   padding: 1.8rem 0;
+  margin-bottom: 2px;
 }
 
 .pricing-section-item__info {
@@ -56,4 +55,32 @@
 
 .pricing-section-item__subitem:first-child {
   background: #333333;
+}
+
+@media (max-width: 845px) {
+  .pricing-section-item__price {
+    font-size: 1.8rem;
+  }
+
+  .pricing-section-item__info {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-section-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pricing-section-item {
+    flex-basis: calc(100% / 12 * 6 - 30px);
+  }
+}
+
+@media (max-width: 460px) {
+  .pricing-section-item {
+    margin-bottom: 2rem;
+    flex-basis: calc(100% - 40px);
+  }
 }

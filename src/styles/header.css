@@ -1,20 +1,23 @@
 .header {
   width: 100%;
   background: #000000;
-  min-height: 4.6rem;
-  padding: 0 7.5rem;
+  max-height: 4.5rem;
+  padding-left: 10%;
+  padding-right: 12%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 10;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 90%;
 }
 
 .header-navigation-list {
   display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-  column-gap: 3rem;
+  column-gap: 8%;
 }
 
 .nav-link {
@@ -24,4 +27,66 @@
   line-height: 1.4;
   text-transform: capitalize;
   color: #ffffff;
+}
+
+.menu-burger-btn {
+  display: none;
+}
+
+.menu-burger-label {
+  display: none;
+}
+
+.menu-burger-label:after,
+.menu-burger-label:before {
+  content: "";
+}
+
+.menu-burger,
+.menu-burger-label:after,
+.menu-burger-label:before {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.menu-burger {
+  top: 8px;
+}
+
+.menu-burger-label:after {
+  bottom: 0;
+}
+.menu-burger-label:before {
+  top: 0;
+}
+
+.menu-burger-btn:focus ~ .menu-burger-label {
+  outline: 2px solid white;
+  outline: auto;
+  outline-offset: 4px;
+}
+
+@media (max-width: 728px) {
+  .menu-burger-btn {
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .header-navigation-list {
+    display: none;
+  }
+
+  .menu-burger-label {
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    height: 19px;
+    display: block;
+    margin-left: 10px;
+  }
 }

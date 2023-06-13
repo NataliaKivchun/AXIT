@@ -16,3 +16,9 @@
 
   --padding-section: 3.5rem 0;
 }
+
+@media (max-width: 845px) {
+  :root {
+    --padding-btn: 0.8rem 4rem;
+  }
+}
